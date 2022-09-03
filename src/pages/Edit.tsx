@@ -1,5 +1,4 @@
 import { Alert, Button, Snackbar, TextField } from "@mui/material";
-import { useMemo } from "react";
 import { useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
 import { useEditPost } from "../hooks/mutations";
@@ -13,7 +12,6 @@ const Edit = () => {
   const {
     register,
     handleSubmit,
-    control,
     formState: { errors },
   } = useForm<any>();
   const onSubmit = (data: {}) => editPost.mutate({ data, id: id });

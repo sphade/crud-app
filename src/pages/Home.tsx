@@ -9,7 +9,6 @@ const Home = () => {
   const {
     register,
     handleSubmit,
-    control,
     formState: { errors },
   } = useForm();
   const onSubmit = (data: {}) => createPost.mutate({ ...data });
