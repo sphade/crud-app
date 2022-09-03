@@ -39,7 +39,7 @@ const Edit = () => {
             required: "this field is required",
           })}
           error={!!errors?.title}
-          helperText={errors?.title && errors?.title?.message}
+          // helperText={errors?.title && errors?.title?.message}
         />
         <TextField
           defaultValue={post?.data?.data?.body}
@@ -52,7 +52,7 @@ const Edit = () => {
             required: "this field is required",
           })}
           error={!!errors?.body}
-          helperText={errors?.body && errors?.body?.message}
+          // helperText={errors?.body && errors?.body?.message}
         />
         <div className="flex justify-end">
           <Button onClick={handleSubmit(onSubmit)} variant="contained">
